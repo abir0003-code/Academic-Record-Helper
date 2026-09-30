@@ -107,7 +107,9 @@ Error handling:
 
 Exiting the program:
 
-![Exit](docs/real_07_exit.png)
+<img width="260" height="170" alt="Screenshot 2026-09-30 160116" src="https://github.com/user-attachments/assets/e7b5baa4-59fd-4807-80df-546c211ae5bb" />
+
+
 
 ## Known Limitations
 
@@ -118,4 +120,4 @@ Exiting the program:
 
 ## Future Improvements
 
-Saving data to a file (CSV or JSON), supporting any number of subjects, grades, and sorting the report by marks.
+Saving data to a file (CSV or JSON), supporting any number of subjects, grades, and sorting the report by marks and moreover I will try to add some more things in it to calculate cgpa and attendance calculator and many more as i get the ideas.
