@@ -79,7 +79,35 @@ Academic-Record-Helper/
 
 ## Screenshots
 
+These were taken on my own computer while running the program.
 
+Start screen:
+
+![Start screen](docs/real_01_start.png)
+
+Adding students:
+
+![Adding students](docs/real_02_add.png)
+
+Viewing all reports:
+
+![View reports](docs/real_03_view.png)
+
+Class average and class topper:
+
+![Class analytics](docs/real_04_analytics.png)
+
+Search, update and delete:
+
+![Search, update and delete](docs/real_05_search_update_delete.png)
+
+Error handling:
+
+![Error handling](docs/real_06_errors.png)
+
+Exiting the program:
+
+![Exit](docs/real_07_exit.png)
 
 ## Known Limitations
 
