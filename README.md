@@ -4,11 +4,11 @@
 **Course:** Introduction To Problem Solving and Programming (CSE1021)  
 **Faculty:** G. Prabhu Kannan
 
-A small console program in Python that keeps track of student marks for a class. You can add students, look them up, change their marks, delete them, and see simple class statistics like the average and the topper.
+A small useful program in Python that keeps track of student marks for a class. You can add students, look them up, change their marks, delete them, and see simple class statistics like the average and the topper.
 
 ## Overview
 
-I built this so a teacher (or a student helping a teacher) can manage marks without a spreadsheet. The program runs in the terminal and shows a menu with eight options. All records are stored in a Python dictionary while the program is running.
+I built this so a teacher (or a student helping a teacher) can manage marks without a spreadsheet. The program runs in the terminal and shows a menu with eight options. All records are stored in a Python dictionary while the program is running. But when it ends and someone exits it, the memory is lost.
 
 The code is split into four files so each file has one job:
 
@@ -22,7 +22,7 @@ The code is split into four files so each file has one job:
 ## Features
 
 - Add a student with marks for two subjects
-- View a report of all students with their average
+- View a report of all students with their personal averages
 - Class average for each subject
 - Find the class topper
 - Search for a student by name
@@ -55,7 +55,7 @@ The program is tested by running it and trying each menu option.
 
 1. Run `python main.py`.
 2. Go through the test cases below in order. Each one says what to type and what you should see.
-3. The screenshots further down show what the output looks like.
+3. The screenshots further down show what the output looks like when i had run the code.
 
 | No. | Test case | What to type | Expected result |
 |-----|-----------|--------------|-----------------|
@@ -90,43 +90,50 @@ Academic-Record-Helper/
 
 ## Screenshots
 
-These were taken on my own computer while running the program.
+These were taken on my own laptop while running the program.
 
 Start screen:
 
-![Start screen](docs/real_01_start.png)
+<img width="512" height="161" alt="Screenshot 2026-09-30 155603" src="https://github.com/user-attachments/assets/43795f31-1127-46b1-86c3-d866960a5e14" />
+
 
 Adding students:
 
-![Adding students](docs/real_02_add.png)
+<img width="464" height="389" alt="Screenshot 2026-09-30 155700" src="https://github.com/user-attachments/assets/1688745c-cf5a-4521-8a20-077905d4ba27" />
+
 
 Viewing all reports:
 
-![View reports](docs/real_03_view.png)
+<img width="314" height="271" alt="Screenshot 2026-09-30 155733" src="https://github.com/user-attachments/assets/81ec5242-13d4-42db-b5e4-b84726a10b18" />
+
 
 Class average and class topper:
 
-![Class analytics](docs/real_04_analytics.png)
+<img width="323" height="267" alt="Screenshot 2026-09-30 155758" src="https://github.com/user-attachments/assets/76e1a394-9658-4bb2-9c8a-c90588b5c531" />
+
 
 Search, update and delete:
 
-![Search, update and delete](docs/real_05_search_update_delete.png)
+<img width="335" height="650" alt="Screenshot 2026-09-30 155926" src="https://github.com/user-attachments/assets/776afdd8-4654-4538-b0ac-458b7c26fa64" />
+
 
 Error handling:
 
-![Error handling](docs/real_06_errors.png)
+<img width="280" height="477" alt="Screenshot 2026-09-30 160100" src="https://github.com/user-attachments/assets/7226c5fa-2d9f-44e6-9935-f10e95228267" />
+
 
 Exiting the program:
 
-![Exit](docs/real_07_exit.png)
+<img width="260" height="170" alt="Screenshot 2026-09-30 160116" src="https://github.com/user-attachments/assets/a3748a04-170a-4e9f-9d8e-e1bffd2f6e81" />
+
 
 ## Known Limitations
 
-- Data is not saved. When the program closes, all records are lost.
-- Only two subjects are supported.
-- Names are case sensitive, so "amit" and "Amit" are treated as different students.
+- Data is not saved so when the program closes, all records are lost.
+- Only two subjects are supported for now, I will increase the number of subjects later on.
+- Names are case sensitive, so "amit" and "Amit" are treated as different students, so that might create a problem.
 - The update option does not accept negative numbers.
 
 ## Future Improvements
 
-Saving data to a file (CSV or JSON), supporting any number of subjects, grades, and sorting the report by marks.
+Saving data to a file (CSV or JSON), supporting any number of subjects, grades, and sorting the report by marks. Furthermore, I will also try to add a cgpa and attendance calculator along with some other things also in the future.
