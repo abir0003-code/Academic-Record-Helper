@@ -19,12 +19,10 @@ The code is split into four files so each file has one job:
 | `analytics.py` | Class average and class topper |
 | `database.py` | Holds the `db` dictionary used by everything else |
 
-There is also `test_helper.py` with unit tests.
-
 ## Features
 
 - Add a student with marks for two subjects
-- View a report of all students with their personal averages
+- View a report of all students with their average
 - Class average for each subject
 - Find the class topper
 - Search for a student by name
@@ -35,7 +33,6 @@ There is also `test_helper.py` with unit tests.
 ## Technologies Used
 
 - Python 3 (no external libraries needed)
-- `unittest` and `unittest.mock` for testing
 - Git and GitHub for version control
 
 ## How to Install and Run
@@ -54,13 +51,28 @@ There is also `test_helper.py` with unit tests.
 
 ## How to Test
 
-From the project folder run:
+The program is tested by running it and trying each menu option.
 
-```
-python -m unittest test_helper -v
-```
+1. Run `python main.py`.
+2. Go through the test cases below in order. Each one says what to type and what you should see.
+3. The screenshots further down show what the output looks like.
 
-There are 12 tests. They cover adding students (valid, empty name, duplicate, bad marks), searching, updating, deleting, the class average, the topper, and what happens when the database is empty. The tests replace `input()` with fake answers so nothing has to be typed.
+| No. | Test case | What to type | Expected result |
+|-----|-----------|--------------|-----------------|
+| 1 | Add a student | Option 1, name `Amit`, marks `80` and `90` | Success: Student added! |
+| 2 | Add a second student | Option 1, name `Riya`, marks `85` and `95` | Success: Student added! |
+| 3 | View all reports | Option 2 | Amit average 85.0, Riya average 90.0 |
+| 4 | Class average | Option 3 | 2 students, averages 82.5 and 92.5 |
+| 5 | Class topper | Option 4 | Riya, total 180.0, average 90.0 |
+| 6 | Search a student | Option 5, name `Amit` | Marks and average 85.0 are shown |
+| 7 | Update marks | Option 6, name `Riya`, marks `86` and `92` | Marks updated successfully! |
+| 8 | Delete, then search again | Option 7, name `Amit`, then option 5, name `Amit` | Record deleted, then Student not found. |
+| 9 | Empty name | Option 1, press Enter | Error: Name cannot be empty. |
+| 10 | Marks typed as text | Option 1, name `Abir`, marks `fifty` | Error: Please enter valid numbers for marks. |
+| 11 | Duplicate name | Option 1, name `Riya` | Error: Student already registered. |
+| 12 | Exit | Option 8 | Thank You!!! Have a nice day. |
+
+Test cases 3 to 5 and 6 to 8 assume the earlier students have been added in the same run, because records are not saved between runs.
 
 ## Project Structure
 
@@ -78,51 +90,43 @@ Academic-Record-Helper/
 
 ## Screenshots
 
-These were taken on my own laptop while running the program.
+These were taken on my own computer while running the program.
 
 Start screen:
 
-<img width="464" height="389" alt="Screenshot 2026-09-30 155700" src="https://github.com/user-attachments/assets/8e2c0389-b98a-4165-ab77-86714bc2d11d" />
-
+![Start screen](docs/real_01_start.png)
 
 Adding students:
 
-<img width="464" height="389" alt="Screenshot 2026-09-30 155700" src="https://github.com/user-attachments/assets/1bd9ccfe-1084-4015-a60a-a52e5b7ed7f3" />
-
+![Adding students](docs/real_02_add.png)
 
 Viewing all reports:
 
-<img width="314" height="271" alt="Screenshot 2026-09-30 155733" src="https://github.com/user-attachments/assets/b4463ca3-d5c8-46d9-a825-c79d53e8c409" />
-
+![View reports](docs/real_03_view.png)
 
 Class average and class topper:
 
-<img width="323" height="267" alt="Screenshot 2026-09-30 155758" src="https://github.com/user-attachments/assets/ee424f6e-4fff-44c1-85ea-a6a624b6f863" />
-
+![Class analytics](docs/real_04_analytics.png)
 
 Search, update and delete:
 
-<img width="335" height="650" alt="Screenshot 2026-09-30 155926" src="https://github.com/user-attachments/assets/18e37b1e-b001-4c96-a4d8-bb0fa86ba34d" />
-
+![Search, update and delete](docs/real_05_search_update_delete.png)
 
 Error handling:
 
-<img width="280" height="477" alt="Screenshot 2026-09-30 160100" src="https://github.com/user-attachments/assets/2802ee37-b7e4-4023-bac5-a167a698abe0" />
-
+![Error handling](docs/real_06_errors.png)
 
 Exiting the program:
 
-<img width="260" height="170" alt="Screenshot 2026-09-30 160116" src="https://github.com/user-attachments/assets/e7b5baa4-59fd-4807-80df-546c211ae5bb" />
-
-
+![Exit](docs/real_07_exit.png)
 
 ## Known Limitations
 
-- Data is not saved permanently in it so when the program closes, all records are lost.
-- Only two subjects are supported for now, I will update and increase the number of subjects later.
-- Names are case sensitive, so "amit" and "Amit" are treated as different students, hence that may create problems.
+- Data is not saved. When the program closes, all records are lost.
+- Only two subjects are supported.
+- Names are case sensitive, so "amit" and "Amit" are treated as different students.
 - The update option does not accept negative numbers.
 
 ## Future Improvements
 
-Saving data to a file (CSV or JSON), supporting any number of subjects, grades, and sorting the report by marks and moreover I will try to add some more things in it to calculate cgpa and attendance calculator and many more as i get the ideas.
+Saving data to a file (CSV or JSON), supporting any number of subjects, grades, and sorting the report by marks.
