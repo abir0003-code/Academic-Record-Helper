@@ -79,17 +79,7 @@ Academic-Record-Helper/
 
 ## Screenshots
 
-Adding students and viewing reports:
 
-![Add and view](docs/shot_add_view.png)
-
-Class average and topper:
-
-![Analytics](docs/shot_analytics.png)
-
-Error handling:
-
-![Errors](docs/shot_errors.png)
 
 ## Known Limitations
 
