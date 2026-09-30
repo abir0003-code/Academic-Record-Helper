@@ -10,7 +10,7 @@ A small useful program in Python that keeps track of student marks for a class. 
 
 I built this so a teacher (or a student helping a teacher) can manage marks without a spreadsheet. The program runs in the terminal and shows a menu with eight options. All records are stored in a Python dictionary while the program is running. But when it ends and someone exits it, the memory is lost.
 
-The code is split into four files so each file has one job:
+The code is split into four files, 3 dictionaries (database, operations, analytics) and 1 Main File:
 
 | File | What it does |
 |------|--------------|
