@@ -24,7 +24,7 @@ There is also `test_helper.py` with unit tests.
 ## Features
 
 - Add a student with marks for two subjects
-- View a report of all students with their average
+- View a report of all students with their personal averages
 - Class average for each subject
 - Find the class topper
 - Search for a student by name
@@ -70,7 +70,6 @@ Academic-Record-Helper/
     operations.py
     analytics.py
     database.py
-    test_helper.py
     README.md
     statement.md
     Project_Report.pdf
@@ -119,9 +118,9 @@ Exiting the program:
 
 ## Known Limitations
 
-- Data is not saved. When the program closes, all records are lost.
-- Only two subjects are supported.
-- Names are case sensitive, so "amit" and "Amit" are treated as different students.
+- Data is not saved permanently in it so when the program closes, all records are lost.
+- Only two subjects are supported for now, I will update and increase the number of subjects later.
+- Names are case sensitive, so "amit" and "Amit" are treated as different students, hence that may create problems.
 - The update option does not accept negative numbers.
 
 ## Future Improvements
