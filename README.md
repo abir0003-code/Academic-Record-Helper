@@ -79,31 +79,37 @@ Academic-Record-Helper/
 
 ## Screenshots
 
-These were taken on my own computer while running the program.
+These were taken on my own laptop while running the program.
 
 Start screen:
 
-![Start screen](docs/real_01_start.png)
+<img width="464" height="389" alt="Screenshot 2026-09-30 155700" src="https://github.com/user-attachments/assets/8e2c0389-b98a-4165-ab77-86714bc2d11d" />
+
 
 Adding students:
 
-![Adding students](docs/real_02_add.png)
+<img width="464" height="389" alt="Screenshot 2026-09-30 155700" src="https://github.com/user-attachments/assets/1bd9ccfe-1084-4015-a60a-a52e5b7ed7f3" />
+
 
 Viewing all reports:
 
-![View reports](docs/real_03_view.png)
+<img width="314" height="271" alt="Screenshot 2026-09-30 155733" src="https://github.com/user-attachments/assets/b4463ca3-d5c8-46d9-a825-c79d53e8c409" />
+
 
 Class average and class topper:
 
-![Class analytics](docs/real_04_analytics.png)
+<img width="323" height="267" alt="Screenshot 2026-09-30 155758" src="https://github.com/user-attachments/assets/ee424f6e-4fff-44c1-85ea-a6a624b6f863" />
+
 
 Search, update and delete:
 
-![Search, update and delete](docs/real_05_search_update_delete.png)
+<img width="335" height="650" alt="Screenshot 2026-09-30 155926" src="https://github.com/user-attachments/assets/18e37b1e-b001-4c96-a4d8-bb0fa86ba34d" />
+
 
 Error handling:
 
-![Error handling](docs/real_06_errors.png)
+<img width="280" height="477" alt="Screenshot 2026-09-30 160100" src="https://github.com/user-attachments/assets/2802ee37-b7e4-4023-bac5-a167a698abe0" />
+
 
 Exiting the program:
 
