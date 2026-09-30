@@ -1,5 +1,9 @@
 # Academic Record Helper
 
+**Author:** Abir Singh Pawar (26BAI10239)  
+**Course:** Introduction To Problem Solving and Programming (CSE1021)  
+**Faculty:** G. Prabhu Kannan
+
 A small console program in Python that keeps track of student marks for a class. You can add students, look them up, change their marks, delete them, and see simple class statistics like the average and the topper.
 
 ## Overview
@@ -39,8 +43,8 @@ There is also `test_helper.py` with unit tests.
 1. Install Python 3.8 or newer.
 2. Clone the repository:
    ```
-   git clone <your-repository-link>
-   cd academic_record_helper
+   git clone https://github.com/abir0003-code/Academic-Record-Helper.git
+   cd Academic-Record-Helper
    ```
 3. Run the program:
    ```
@@ -61,7 +65,7 @@ There are 12 tests. They cover adding students (valid, empty name, duplicate, ba
 ## Project Structure
 
 ```
-academic_record_helper/
+Academic-Record-Helper/
     main.py
     operations.py
     analytics.py
@@ -69,6 +73,7 @@ academic_record_helper/
     test_helper.py
     README.md
     statement.md
+    Project_Report.pdf
     docs/            diagrams and screenshots
 ```
 
